@@ -11,4 +11,118 @@ body{
     font-size: 16px;
     line-height: 1.5;
     color: #333;
+    background: #a1c3ff;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1, h2{
+    margin-bottom: 15px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navbar{
+    background: #3474e6;
+    color: white;
+    height: 60px;
+}
+
+.logo{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a:hover{
+    color: turquoise;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 1rem;
+    /* to achieve this exact spacing for the li, I can also create a class attribute of .navbar ul li. the css I would do is margin left 20px. This would replace "Gap".*/
+}
+
+
+.header{
+    background-color: #0151cc;
+    color: white;
+    min-height: 400px;
+}
+
+.header h1{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header img{
+    max-width: 400px;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxes .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    background: #0151cc;
+    color: white;
+    border-radius: 10px;
+    flex: 1;
+    margin: 20px 10px;
+    padding: 15px 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0.5, 0.9);
+}
+
+.box i{
+    margin-right: 10px;
+}
+
+@media(max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .boxes.container {
+        display: block;
+        text-align: center;
+    }
+
+    .container.box{
+        display: flex;
+        flex-direction: row;
+    }
 }
